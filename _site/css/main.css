@@ -1,0 +1,48 @@
+/* GLOBAL STYLES */
+a {
+    color: #f00;
+}
+html {
+    background-color: black;
+    padding: 0 30px;
+    box-shadow: 0 0 0 30px #000 inset;
+}
+/* HEADER STYLES */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    
+}
+.header-logo {
+    background-color: black;
+    height: 40vh;
+    width: 100%;
+    
+}
+.header-logo img {
+    filter: grayscale(44%) sepia(48%) hue-rotate(211deg) saturate(774%) contrast(318%);
+-webkit-filter: grayscale(44%) sepia(48%) hue-rotate(211deg) saturate(774%) contrast(318%);
+-moz-filter: grayscale(44%) sepia(48%) hue-rotate(211deg) saturate(774%) contrast(318%);
+}
+
+
+.header-nav{
+   
+}
+.nav-links > li {
+    display: inline-block;
+    float: right;
+}
+.nav-links {
+   list-style-type: none;
+   margin: 0;
+   overflow: hidden;
+   padding: 0;
+   z-index: 20;
+}
+.nav-links a {
+    font-size: 2.3vh;
+    padding: 14px 16px;
+    text-align: center;
+}
