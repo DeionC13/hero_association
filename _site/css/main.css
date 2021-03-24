@@ -1,48 +1,63 @@
-/* GLOBAL STYLES */
-a {
-    color: #f00;
+/* GLOBAL CLASSES */
+@font-face {
+    font-family: 'Batman Beat the Hell Outta Me';
+    src: url(/fonts/batman_beat_the_hell_outta_me/BATMAN.TTF);
 }
-html {
-    background-color: black;
-    padding: 0 30px;
-    box-shadow: 0 0 0 30px #000 inset;
+@font-face {
+    font-family: 'Super Hero';
+    src:url(/fonts/super_hero/SuperHero.ttf)
 }
-/* HEADER STYLES */
-.header {
+/* HERO CLASSES */
+.full-hero {
+    background-size: cover;
+    background: url(/images/batman-silohuette.jpg), no-repeat center;
+    bottom: 10px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    border: 10px solid black;
+}
+.full-hero a{
+    color: red;
+    text-decoration: none;
+    position: relative;
+    top: 40%;
+    left: 30%;
+}
+.full-hero a:hover {
+    color: cyan;
+}
+
+/* HOME STYLES */
+.hero-favicon {
+    font-family: 'Super Hero';
+    font-size: 3em;
+    
+}
+/* NAV LINKS */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 20;
+}
+.nav-links li {
     
+    float: left;
 }
-.header-logo {
-    background-color: black;
-    height: 40vh;
-    width: 100%;
-    
-}
-.header-logo img {
-    filter: grayscale(44%) sepia(48%) hue-rotate(211deg) saturate(774%) contrast(318%);
--webkit-filter: grayscale(44%) sepia(48%) hue-rotate(211deg) saturate(774%) contrast(318%);
--moz-filter: grayscale(44%) sepia(48%) hue-rotate(211deg) saturate(774%) contrast(318%);
-}
-
-
-.header-nav{
-   
-}
-.nav-links > li {
-    display: inline-block;
-    float: right;
-}
-.nav-links {
-   list-style-type: none;
-   margin: 0;
-   overflow: hidden;
-   padding: 0;
-   z-index: 20;
-}
-.nav-links a {
-    font-size: 2.3vh;
+.nav-links li a{
+    font-family: 'Batman Beat the Hell Outta Me';
+    font-size: 2em;
+    color: red;
+    display: block;
     padding: 14px 16px;
     text-align: center;
+    text-decoration: none;
+}
+.nav-links li a:hover {
+    color: cyan;
 }
